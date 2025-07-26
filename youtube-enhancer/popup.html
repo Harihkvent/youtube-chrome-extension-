@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Enhancer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>YouTube Enhancer</h2>
+
+  <label>Skip Intro (seconds):</label>
+  <input type="number" id="skipSeconds" min="0" />
+
+  <label>Playback Speed:</label>
+  <select id="playbackSpeed">
+    <option value="1">1x</option>
+    <option value="1.25">1.25x</option>
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="skipAds" />
+    Auto Skip YouTube Ads
+  </label>
+
+  <button id="save">Save Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

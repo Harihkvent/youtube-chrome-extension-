@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Enhancer Pro",
+  "version": "2.0",
+  "description": "Auto-skip intros, detect silence, set playback speed, skip ads, and save to Watch Later.",
+  "permissions": ["scripting", "tabs", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
